@@ -33,8 +33,8 @@ const App = () => {
 						<Drawer open={menu} anchor="right" onClose={() => setMenu(false)}>
 							<Box sx={{width:250}}>
 								<List>
-									<ListItem onClick={() => {setMenu(false); goTo("EL1");}}>
-										<h3 className={activeElement === "EL1" ? "selected-menuitem" : "menuitem"}>Ayon Bhowmick</h3>
+									<ListItem className={activeElement === "EL1" ? "selected-menuitem" : "menuitem"} onClick={() => {setMenu(false); goTo("EL1");}}>
+										<h3>Ayon Bhowmick</h3>
 									</ListItem>
 									<ListItem onClick={() => {setMenu(false); goTo("EL2");}}>
 										<h3 className={activeElement === "EL1" ? "selected-menuitem" : "menuitem"}>Projects</h3>

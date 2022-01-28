@@ -1,14 +1,10 @@
-.name{
-    position: relative;
-    left: 0.7vw;
-    font-size: 5vw;
-    line-height: 110%;
-}
-
-.aboutMe{
-    position: relative;
-    left: 0.7vw;
-    top: -2em;
+.invisible {
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    height: 43%;
+    width: 15%;
+    top: 27%;
 }
 
 .box{
@@ -19,6 +15,34 @@
     border-left-width: 0.5vw;
     border-left-style: solid;
     border-left-color: black;
+    height: 43%;
+}
+
+.box>h1{
+    position: relative;
+    left: 0.7vw;
+    top: -3vh;
+    font-size: 5vw;
+    line-height: 110%;
+    animation: Slide_Right 1.5s ease;
+}
+
+.box>p{
+    position: relative;
+    left: 0.7vw;
+    top: -4em;
+    animation: Slide_Right 1.5s ease;
+}
+
+@keyframes Slide_Right{
+    0%{
+        left: -100%;
+        opacity: 0;
+    }
+    100%{
+        left: 3%;
+        opacity: 1;
+    }
 }
 
 .home{
