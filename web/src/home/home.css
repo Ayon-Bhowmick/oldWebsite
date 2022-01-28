@@ -1,0 +1,26 @@
+.name{
+    position: relative;
+    left: 0.7vw;
+    font-size: 5vw;
+    line-height: 110%;
+}
+
+.aboutMe{
+    position: relative;
+    left: 0.7vw;
+    top: -2em;
+}
+
+.box{
+    position: absolute;
+    width: 25%;
+    left: 15%;
+    top: 27%;
+    border-left-width: 0.5vw;
+    border-left-style: solid;
+    border-left-color: black;
+}
+
+.home{
+    height: 105vh;
+}
