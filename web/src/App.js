@@ -10,6 +10,7 @@ import Box from '@mui/system/Box';
 import Home from './home/Home';
 import Contact from "./contact/Contact";
 import Projects from "./projects/Projects";
+import Skills from "./skills/Skills";
 
 const elements = {
 	EL1: {},
@@ -83,8 +84,8 @@ const App = () => {
 							<div ref={refs.EL2}>
 								<Projects/>
 							</div>
-							<div ref={refs.EL3} className="content">
-								<h1>Skills</h1>
+							<div ref={refs.EL3}>
+								<Skills/>
 							</div>
 							<div ref={refs.EL4} className="content">
 								<h1>Awards/Experience</h1>

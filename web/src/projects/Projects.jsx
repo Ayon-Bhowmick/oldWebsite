@@ -14,7 +14,7 @@ const Projects = () => {
             </div>
             <div className="projects-container">
                 <div className="invisible-left-projects"/>
-                <img src="SusLogo.png" alt="SusLogo"/>
+                <img src="SusLogo.png" alt="SusLogo" />
                 <div className={setProjTitle ? "project-description animate" : "project-description"}>
                     <h3>Sus Foods</h3>
                     <p>
@@ -31,10 +31,10 @@ const Projects = () => {
                         <h5>CSS</h5>
                     </div>
                     <div className="project-links">
-                        <Button href="https://github.com/Ayon-Bhowmick/HackHolyoke" target="_blank">
-                            <img src="Octicons-mark-github.svg" alt="Github"/>
+                        <Button href="https://github.com/Ayon-Bhowmick/HackHolyoke" target="_blank" sx={{color:"#945197"}}>
+                            <img src="github.svg" alt="Github"/>
                         </Button>
-                        <Button href="https://devpost.com/software/susfoods-for-a-sustainable-future" target="_blank">
+                        <Button href="https://devpost.com/software/susfoods-for-a-sustainable-future" target="_blank" sx={{color:"#945197"}}>
                             <img src="devpost.svg" alt="devPost"/>
                         </Button>
                     </div>

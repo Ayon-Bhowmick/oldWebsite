@@ -1,0 +1,63 @@
+.skills {
+    height: 105vh;
+}
+
+.invisible-top-skills {
+  position: absolute;
+  left: 3%;
+  z-index: 0;
+  height: 8%;
+  width: 8vh;
+  border-top-width: 0.4vw;
+  border-top-style: solid;
+  background-color: #191919;
+  border-top-color: #945197;
+}
+
+.invisible-skills {
+    position: absolute;
+    z-index: 1;
+    background-color: #191919;
+    height: 8%;
+    width: 3%;
+    border-right-width: 0.4vw;
+    border-right-style: solid;
+    border-right-color: #945197;
+    animation: Slide_Away_skills 1s ease 1.5s forwards;
+}
+
+.head-skills {
+    position: relative;
+    left: 3%;
+    height: 8%;
+    width: 25%;
+}
+
+.head-skills>h2 {
+    position: relative;
+    font-size: 3vw;
+    z-index: 0;
+    color: whitesmoke;
+    left: 0.8vw;
+    animation: Slide_Right_skills 1s ease;
+}
+
+@keyframes Slide_Right_skills {
+    0% {
+        left: -100%;
+        opacity: 0;
+    }
+    100% {
+        left: 3%;
+        opacity: 1;
+    }
+}
+
+@keyframes Slide_Away_skills {
+    0% {
+        height: 8%;
+    }
+    100% {
+        height: 0%;
+    }
+}

@@ -65,7 +65,7 @@
 
 .projects-container {
   position: relative;
-  top: 5%;
+  padding-top: 5%;
 }
 
 .projects-container > img {
@@ -80,8 +80,8 @@
   position: absolute;
   z-index: 1;
   right: 20%;
-  top: 20%;
-  height: 60%;
+  top: 27%;
+  height: 52%;
   width: 31%;
   background-color: #442546;
   color: whitesmoke;
@@ -95,10 +95,12 @@
 
 @keyframes Slide_Left_projects {
   0% {
-    right: 0%;
+    right: -20%;
+    opacity: 0;
   }
   100% {
     right: 20%;
+    opacity: 1;
   }
 }
 
@@ -106,10 +108,10 @@
   position: absolute;
   z-index: 2;
   background-color: #191919;
-  height: 60%;
+  height: 52%;
   width: 19.6%;
   left: 80%;
-  top: 20%;
+  top: 27%;
   border-left-width: 0.4vw;
   border-left-style: solid;
   border-left-color: #945197;
