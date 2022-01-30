@@ -2,19 +2,8 @@
     padding-bottom: 500px;
 }
 
-menuitem{
-    padding: 2%;
-}
-
-menuitem:hover{
-    font-style: italic;
-}
-
-selected-menuitem{
-    padding: 2%;
-    text-decoration: underline;
-}
-
-selected-menuitem:hover{
-    font-style: italic;
+.stack{
+    flex-direction: column;
+    align-items: center;
+    background-color: #191919;
 }

@@ -1,0 +1,137 @@
+.projects {
+  height: 105vh;
+}
+
+.invisible-projects {
+  position: absolute;
+  z-index: 1;
+  background-color: #191919;
+  height: 8%;
+  width: 3%;
+  border-right-width: 0.4vw;
+  border-right-style: solid;
+  border-right-color: #945197;
+  animation: Slide_Away_projects 1s ease 1.5s forwards;
+}
+
+.invisible-top-projects {
+  position: absolute;
+  left: 3%;
+  z-index: 0;
+  height: 8%;
+  width: 8vh;
+  border-top-width: 0.4vw;
+  border-top-style: solid;
+  background-color: #191919;
+  border-top-color: #945197;
+}
+
+.head-projects {
+  position: relative;
+  left: 3%;
+  height: 8%;
+  width: 25%;
+}
+
+.head-projects > h2 {
+  position: relative;
+  font-size: 3vw;
+  z-index: 0;
+  color: whitesmoke;
+  left: 0.8vw;
+  animation: Slide_Right_projects 1s ease;
+}
+
+@keyframes Slide_Right_projects {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 3%;
+    opacity: 1;
+  }
+}
+
+@keyframes Slide_Away_projects {
+  0% {
+    height: 8%;
+  }
+  100% {
+    height: 0%;
+  }
+  
+}
+
+.projects-container {
+  position: relative;
+  top: 5%;
+}
+
+.projects-container > img {
+  position: relative;
+  background-color: whitesmoke;
+  height: 30%;
+  width: 30%;
+  left: 25%;
+}
+
+.project-description {
+  position: absolute;
+  z-index: 1;
+  right: 20%;
+  top: 20%;
+  height: 60%;
+  width: 31%;
+  background-color: #442546;
+  color: whitesmoke;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.project-description.animate {
+  animation: Slide_Left_projects 1s ease;
+}
+
+@keyframes Slide_Left_projects {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 20%;
+  }
+}
+
+.invisible-left-projects {
+  position: absolute;
+  z-index: 2;
+  background-color: #191919;
+  height: 60%;
+  width: 19.6%;
+  left: 80%;
+  top: 20%;
+  border-left-width: 0.4vw;
+  border-left-style: solid;
+  border-left-color: #945197;
+}
+
+.project-description>h3, p {
+  width: 85%;
+}
+
+.made-with-list>h5 {
+  position: relative;
+  top: -3.5vh;
+  float: left;
+  padding: 2%;
+  margin-right: 2%;
+  background-color: #2E192F;
+  border-radius: 0.2vw;
+}
+
+.project-links {
+  position: relative;
+  float: top;
+  top: -27vh;
+  left: 1vw;
+}

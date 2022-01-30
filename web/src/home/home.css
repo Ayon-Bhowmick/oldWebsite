@@ -1,50 +1,67 @@
 .invisible {
-    z-index: 1;
-    position: absolute;
-    background-color: white;
-    height: 43%;
-    width: 15%;
+  z-index: 1;
+  position: absolute;
+  background-color: #191919;
+  height: 43%;
+  width: 14.5%;
+  top: 27%;
+  border-right-width: 0.5vw;
+  border-right-style: solid;
+  border-right-color: #945197;
+  animation: Slide_Down 2s ease;
+}
+
+.box {
+  position: absolute;
+  width: 25%;
+  left: 15%;
+  top: 27%;
+  height: 43%;
+  animation: Slide_Down 2s ease;
+}
+
+.box > h1 {
+  position: relative;
+  left: 0.7vw;
+  top: -3vh;
+  font-size: 5vw;
+  line-height: 110%;
+  color: whitesmoke;
+  animation: Slide_Right 3.5s ease;
+}
+
+.box > p {
+  position: relative;
+  left: 0.7vw;
+  top: -4em;
+  color: whitesmoke;
+  animation: Slide_Right 3.5s ease;
+}
+
+@keyframes Slide_Right {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 3%;
+    opacity: 1;
+  }
+}
+
+@keyframes Slide_Down {
+  0% {
+    top: -200%;
+  }
+  100% {
     top: 27%;
+  }
 }
 
-.box{
-    position: absolute;
-    width: 25%;
-    left: 15%;
-    top: 27%;
-    border-left-width: 0.5vw;
-    border-left-style: solid;
-    border-left-color: black;
-    height: 43%;
-}
-
-.box>h1{
-    position: relative;
-    left: 0.7vw;
-    top: -3vh;
-    font-size: 5vw;
-    line-height: 110%;
-    animation: Slide_Right 1.5s ease;
-}
-
-.box>p{
-    position: relative;
-    left: 0.7vw;
-    top: -4em;
-    animation: Slide_Right 1.5s ease;
-}
-
-@keyframes Slide_Right{
-    0%{
-        left: -100%;
-        opacity: 0;
-    }
-    100%{
-        left: 3%;
-        opacity: 1;
-    }
-}
-
-.home{
-    height: 105vh;
+.home {
+  height: 105vh;
 }
