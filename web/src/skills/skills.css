@@ -1,5 +1,5 @@
 .skills {
-    height: 105vh;
+  height: 105vh;
 }
 
 .invisible-top-skills {
@@ -15,49 +15,222 @@
 }
 
 .invisible-skills {
-    position: absolute;
-    z-index: 1;
-    background-color: #191919;
-    height: 8%;
-    width: 3%;
-    border-right-width: 0.4vw;
-    border-right-style: solid;
-    border-right-color: #945197;
-    animation: Slide_Away_skills 1s ease 1.5s forwards;
+  position: absolute;
+  z-index: 1;
+  background-color: #191919;
+  height: 8%;
+  width: 3%;
+  border-right-width: 0.4vw;
+  border-right-style: solid;
+  border-right-color: #945197;
+  animation: Slide_Away_skills 1s ease 1.5s forwards;
 }
 
 .head-skills {
-    position: relative;
-    left: 3%;
-    height: 8%;
-    width: 25%;
+  position: relative;
+  left: 3%;
+  height: 8%;
+  width: 25%;
 }
 
-.head-skills>h2 {
-    position: relative;
-    font-size: 3vw;
-    z-index: 0;
-    color: whitesmoke;
-    left: 0.8vw;
-    animation: Slide_Right_skills 1s ease;
+.head-skills > h2 {
+  position: relative;
+  font-size: 3vw;
+  z-index: 0;
+  color: whitesmoke;
+  left: 0.8vw;
+  animation: Slide_Right_skills 1s ease;
 }
 
 @keyframes Slide_Right_skills {
-    0% {
-        left: -100%;
-        opacity: 0;
-    }
-    100% {
-        left: 3%;
-        opacity: 1;
-    }
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  100% {
+    left: 3%;
+    opacity: 1;
+  }
 }
 
 @keyframes Slide_Away_skills {
-    0% {
-        height: 8%;
-    }
-    100% {
-        height: 0%;
-    }
+  0% {
+    height: 8%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.skills-container {
+  position: relative;
+  padding-top: 2vw;
+  margin: 1vw;
+  height: 40vw;
+}
+
+.left-corner-skills {
+  position: absolute;
+  z-index: 0;
+  left: 3vw;
+  height: 5vw;
+  width: 5vw;
+  border-top-color: #945197;
+  border-top-style: solid;
+  border-top-width: 0.4vw;
+  border-left-color: #945197;
+  border-left-style: solid;
+  border-left-width: 0.4vw;
+  background-color: #191919;
+  animation: fadeInTopLeft 1s ease;
+}
+
+.right-corner-skills {
+  position: absolute;
+  z-index: 0;
+  right: 3vw;
+  bottom: 0vw;
+  height: 5vw;
+  width: 5vw;
+  border-bottom-color: #945197;
+  border-bottom-style: solid;
+  border-bottom-width: 0.4vw;
+  border-right-color: #945197;
+  border-right-style: solid;
+  border-right-width: 0.4vw;
+  background-color: #191919;
+  animation: fadeInBottomRight 1s ease;
+}
+
+.skills-box {
+  position: relative;
+  visibility: hidden;
+  z-index: 2;
+  top: -1.6vw;
+  left: 3.4vw;
+  background-color: #442546;
+  height: 39.2vw;
+  width: 90.4vw;
+  animation: zoomIn 1s ease 1.5s forwards;
+}
+
+@keyframes fadeInTopLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInBottomRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    visibility: visible;
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.skills-sub-container {
+  position: relative;
+  background-color: #2e192f;
+  width: 80vw;
+  height: 10vw;
+  margin: auto;
+  top: 1vw;
+}
+
+#languages {
+  width: 40vw;
+  height: 20vw;
+  left: -21vw;
+  top: 3vw;
+}
+
+#frameworks {
+  width: 40vw;
+  height: 20vw;
+  right: -21vw;
+  top: -19vw;
+}
+
+#tools {
+  height: 11vw;
+  top: -19vw;
+  width: 82vw;
+}
+
+.skills-sub-container > h3 {
+  position: relative;
+  font-size: 2vw;
+  color: whitesmoke;
+  left: 0.8vw;
+}
+
+.skills-list {
+  /* flex-wrap: wrap; */
+  display: flex;
+  justify-content: space-around;
+  color: whitesmoke;
+  width: 35vw;
+  height: 15vw;
+  position: relative;
+  top: -1vw;
+  margin: auto;
+  flex-wrap: wrap;
+  display: inline-flexbox;
+  line-height: -10vw;
+}
+
+.skills-list-item {
+  padding: 1vw;
+  margin-bottom: -2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.skills-list-img {
+  height: 4vw;
+  width: 4vw;
+}
+
+.skills-list-p {
+  margin-top: -0.1vw;
+  font-size: 1vw;
+}
+
+#frameworks-list {
+  width: 400vw;
+}
+
+#tools-list {
+  top: -2.5vw;
+  width: 80vw;
+}
+
+#vscode {
+  position: relative;
+  right: -2.5vw;
 }

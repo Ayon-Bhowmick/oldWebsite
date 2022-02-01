@@ -71,7 +71,7 @@ const App = () => {
 										<h3>Contact</h3>
 									</ListItem>
 									:
-									<ListItem sx={{color:"#F5F5F5", cursor: "pointer"	}} onClick={() =>  {setMenu(false); goTo("EL5");}}>
+									<ListItem sx={{color:"#F5F5F5", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL5");}}>
 										<h3>Contact</h3>
 									</ListItem>}
 								</List>

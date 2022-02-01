@@ -3,8 +3,8 @@
   position: absolute;
   background-color: #191919;
   height: 43%;
-  width: 14.5%;
-  top: 27%;
+  width: 14.5vw;
+  top: 13.5vw;
   border-right-width: 0.5vw;
   border-right-style: solid;
   border-right-color: #945197;
@@ -55,10 +55,10 @@
 
 @keyframes Slide_Down {
   0% {
-    top: -200%;
+    top: -100vw;
   }
   100% {
-    top: 27%;
+    top: 13.5vw;
   }
 }
 

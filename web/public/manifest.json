@@ -11,6 +11,77 @@
       "src": "SusLogo.png",
       "sizes": "1391x1391 64x64 32x32 24x24 16x16",
       "type": "image/png"
+    },
+    {
+      "src": "c.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "css.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "html.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "devpost.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "electron.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "expo.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "git.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "github.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+  
+    {
+      "src": "node.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "reactjs.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "heroku.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "java.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "javascript.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    },
+    {
+      "src": "typescript.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
     }
   ],
   "start_url": ".",
