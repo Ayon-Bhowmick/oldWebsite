@@ -2,7 +2,7 @@
   z-index: 1;
   position: absolute;
   background-color: #191919;
-  height: 43%;
+  height: 22vw;
   width: 14.5vw;
   top: 13.5vw;
   border-right-width: 0.5vw;
@@ -13,17 +13,16 @@
 
 .box {
   position: absolute;
-  width: 25%;
-  left: 15%;
-  top: 27%;
-  height: 43%;
+  width: 25vw;
+  left: 15vw;
+  top: 13.5vw;
   animation: Slide_Down 2s ease;
 }
 
 .box > h1 {
   position: relative;
   left: 0.7vw;
-  top: -3vh;
+  top: -1vw;
   font-size: 5vw;
   line-height: 110%;
   color: whitesmoke;
@@ -63,5 +62,5 @@
 }
 
 .home {
-  height: 105vh;
+  height: 50vw;
 }

@@ -120,6 +120,14 @@ const Skills = () => {
                                 <img src="trello.svg" alt="Trello" className="skills-list-img"/>
                                 <p className="skills-list-p">Trello</p>
                             </div>
+                            <div className="skills-list-item">
+                                <img src="photoshop.svg" alt="Photoshop" className="skills-list-img"/>
+                                <p className="skills-list-p">Photoshop</p>
+                            </div>
+                            <div className="skills-list-item">
+                                <img src="illustrator.svg" alt="Illustrator" className="skills-list-img"/>
+                                <p className="skills-list-p">Illustrator</p>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -11,6 +11,7 @@ import Home from './home/Home';
 import Contact from "./contact/Contact";
 import Projects from "./projects/Projects";
 import Skills from "./skills/Skills";
+import AwardsExperience from "./awardsExperience/AwardsExperience";
 
 const elements = {
 	EL1: {},
@@ -34,7 +35,7 @@ const App = () => {
 						<Drawer sx={{color:"#191919"}} open={menu} anchor="right" onClose={() => setMenu(false)}>
 							<Box sx={{width:250, background:"#191919", height:"100%"}}>
 								<List>
-									{activeElement === "EL1" ? 
+									{activeElement === "EL1" ?
 									<ListItem sx={{color:"#945197", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL1");}}>
 										<h3>Ayon Bhowmick</h3>
 									</ListItem>
@@ -42,7 +43,7 @@ const App = () => {
 									<ListItem sx={{color:"#F5F5F5", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL1");}}>
 										<h3>Ayon Bhowmick</h3>
 									</ListItem>}
-									{activeElement === "EL2" ? 
+									{activeElement === "EL2" ?
 									<ListItem sx={{color:"#945197", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL2");}}>
 										<h3>Projects</h3>
 									</ListItem>
@@ -50,7 +51,7 @@ const App = () => {
 									<ListItem sx={{color:"#F5F5F5", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL2");}}>
 										<h3>Projects</h3>
 									</ListItem>}
-									{activeElement === "EL3" ? 
+									{activeElement === "EL3" ?
 									<ListItem sx={{color:"#945197", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL3");}}>
 										<h3>Skills</h3>
 									</ListItem>
@@ -58,7 +59,7 @@ const App = () => {
 									<ListItem sx={{color:"#F5F5F5", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL3");}}>
 										<h3>Skills</h3>
 									</ListItem>}
-									{activeElement === "EL4" ? 
+									{activeElement === "EL4" ?
 									<ListItem sx={{color:"#945197", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL4");}}>
 										<h3>Awards/Experience</h3>
 									</ListItem>
@@ -66,7 +67,7 @@ const App = () => {
 									<ListItem sx={{color:"#F5F5F5", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL4");}}>
 										<h3>Awards/Experience</h3>
 									</ListItem>}
-									{activeElement === "EL5" ? 
+									{activeElement === "EL5" ?
 									<ListItem sx={{color:"#945197", cursor: "pointer"}} onClick={() =>  {setMenu(false); goTo("EL5");}}>
 										<h3>Contact</h3>
 									</ListItem>
@@ -88,7 +89,7 @@ const App = () => {
 								<Skills/>
 							</div>
 							<div ref={refs.EL4} className="content">
-								<h1>Awards/Experience</h1>
+								<AwardsExperience/>
 							</div>
 							<div ref={refs.EL5} className="content">
 								<Contact/>

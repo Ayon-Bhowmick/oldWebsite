@@ -1,5 +1,5 @@
 .projects {
-  height: 105vh;
+  height: 120vw;
 }
 
 .invisible-projects {
@@ -7,7 +7,7 @@
   z-index: 1;
   background-color: #191919;
   height: 8%;
-  width: 3%;
+  width: 3vw;
   border-right-width: 0.4vw;
   border-right-style: solid;
   border-right-color: #945197;
@@ -60,33 +60,37 @@
   100% {
     height: 0%;
   }
-  
+
 }
 
 .projects-container {
   position: relative;
-  padding-top: 5%;
+  padding-top: 5vw;
+  top: -5vw;
 }
 
 .projects-container > img {
   position: relative;
   background-color: whitesmoke;
-  height: 30%;
-  width: 30%;
-  left: 25%;
+  height: 30vw;
+  width: 30vw;
+  left: 25vw;
 }
 
 .project-description {
   position: absolute;
   z-index: 1;
-  right: 20%;
-  top: 27%;
-  height: 52%;
-  width: 31%;
+  right: 20vw;
+  top: 9.5vw;
+  height: 18.3vw;
+  width: 31vw;
   background-color: #442546;
   color: whitesmoke;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-right-width: 0.4vw;
+  border-right-style: solid;
+  border-right-color: #945197;
 }
 
 .project-description.animate {
@@ -112,28 +116,56 @@
   width: 19.6%;
   left: 80%;
   top: 27%;
-  border-left-width: 0.4vw;
-  border-left-style: solid;
-  border-left-color: #945197;
 }
 
 .project-description>h3, p {
   width: 85%;
+  font-size: 1.1vw;
 }
 
 .made-with-list>h5 {
   position: relative;
-  top: -3.5vh;
+  top: -2vw;
   float: left;
   padding: 2%;
   margin-right: 2%;
   background-color: #2E192F;
   border-radius: 0.2vw;
+  font-size: 0.9vw;
 }
 
 .project-links {
   position: relative;
   float: top;
-  top: -27vh;
+  top: -13.5vw;
   left: 1vw;
+}
+
+#birthday {
+  height: 15vw;
+  top: 12vw;
+  left: 25vw;
+  text-align: right;
+  border-left-width: 0.4vw;
+  border-left-style: solid;
+  border-left-color: #945197;
+  border-right: none;
+}
+
+#birthday-link {
+  top: -16vw;
+  left: 0.5vw;
+  padding-left: 25vw;
+}
+
+#birthday_img {
+  left: 50vw;
+}
+
+#violetLight {
+  height: 19.5vw;
+}
+
+#violetLight-link {
+  top: -15vw;
 }
