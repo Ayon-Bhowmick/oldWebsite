@@ -69,7 +69,7 @@ const Projects = () => {
                 <div className={"project-description"} id="violetLight">
                     <h3>Violet Light</h3>
                     <p>
-                        Violet Light is a phone app which allows you make a group of friends which allows you to see each other's distance and battery level. This is for when a group of friends wants to check in on each other at a party in order to stay safe. This project was made for the HackViolet 2021.
+                        Violet Light is a phone app which allows you make a group of friends which allows you to see each other's distance and battery level. This is for when a group of friends wants to check in on each other at a party in order to stay safe. This project was made for the HackViolet 2021 hackathon.
                     </p>
                     <p>
                         Made with:

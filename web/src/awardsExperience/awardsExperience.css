@@ -1,5 +1,5 @@
 .awardsExperience {
-  height: 15vw;
+  height: 50vw;
 }
 
 .invisible-awards {
@@ -70,15 +70,13 @@
   height: 12vw;
   width: 90vw;
   color: whitesmoke;
+  padding-top: 1vw;
+  padding-left: 1vw;
+  border-left: #945197 solid 0.4vw;
 }
 
 #top_award {
   margin-top: 5vw;
-}
-
-.awards-container {
-  padding-top: 1vw;
-  padding-left: 1vw;
 }
 
 .sub {

@@ -1,8 +1,5 @@
 import { useInView } from "react-intersection-observer"
 import "./contact.css";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 
 const Contact = () => {
     const [contactTitle, setContactTitle] = useInView({triggerOnce: true, threshold: 0.5});
@@ -14,24 +11,37 @@ const Contact = () => {
             <div className={setContactTitle ? "head-contact" : null}>
                 <h2>Contact</h2>
             </div>
-            {/* <div className="contact-content">
-                <div className="linkedin">
-                    <LinkedInIcon />
+            <div className="contact-content">
+                <div className="contact_link">
+                    <img src="email.svg" alt="email"/>
+                    <p>Email</p>
+                    <a className="actual-link" href="mailto:ayonbhowmick2002@gmail.com" target="_blank" id="email_link">
+                        <span/>
+                    </a>
+                </div>
+                <div className="contact_link">
+                    <img src="linkedin.png" alt="linkedin" id="linkedin"/>
                     <p>LinkedIn</p>
+                    <a className="actual-link" href="https://www.linkedin.com/in/ayon-bhowmick-40685a226/" target="_blank" id="linkedin_link">
+                        <span/>
+                    </a>
                 </div>
-                <div className="github" href="">
-                    <GitHubIcon />
+                <div className="contact_link">
+                    <img src="github.svg" alt="github"/>
                     <p>GitHub</p>
+                    <a className="actual-link" href="https://github.com/Ayon-Bhowmick" target="_blank" id="github_link">
+                        <span/>
+                    </a>
                 </div>
-                <div className="devpost">
+                <div className="contact_link">
                     <img src="devpost.svg" alt="devPost"/>
                     <p>DevPost</p>
+                    <a className="actual-link" href="https://devpost.com/ayonbolt" target="_blank" id="devpost_link">
+                        <span/>
+                    </a>
                 </div>
-                <div className="email">
-                    <EmailRoundedIcon />
-                    <p>Email</p>
-                </div>
-            </div> */}
+            </div>
+            <a id="website-link" href="https://github.com/Ayon-Bhowmick/Ayon-Bhowmick.github.io/tree/main/web" target="_blank">Link to Github of website</a>
         </div>
     );
 }

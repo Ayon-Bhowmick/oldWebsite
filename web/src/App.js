@@ -88,10 +88,10 @@ const App = () => {
 							<div ref={refs.EL3}>
 								<Skills/>
 							</div>
-							<div ref={refs.EL4} className="content">
+							<div ref={refs.EL4}>
 								<AwardsExperience/>
 							</div>
-							<div ref={refs.EL5} className="content">
+							<div ref={refs.EL5}>
 								<Contact/>
 							</div>
 						</div>

@@ -209,11 +209,30 @@
   margin-bottom: -2vw;
   margin-left: 1vw;
   margin-right: 1vw;
+  visibility: hidden;
+  height: 0%;
+  opacity: 0;
+  animation: img_appear 1s ease 1.5s forwards;
 }
 
 .skills-list-img {
   height: 4vw;
   width: 4vw;
+}
+
+@keyframes img_appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+    height: 100%;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .skills-list-p {
